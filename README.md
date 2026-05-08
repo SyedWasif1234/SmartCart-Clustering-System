@@ -3,14 +3,14 @@
 ## 📌 Project Overview
 SmartCart is a growing e-commerce platform that previously used generic marketing strategies for all customers.This approach resulted in inefficient marketing, delayed identification of churn-prone users, and missed opportunities to retain high-value customers. 
 
-This project implements an intelligent customer segmentation system using unsupervised machine learning. [cite_start]By analyzing historical transaction data, the system groups customers into meaningful clusters based on their purchasing behavior, engagement levels, and loyalty indicators.
+This project implements an intelligent customer segmentation system using unsupervised machine learning. By analyzing historical transaction data, the system groups customers into meaningful clusters based on their purchasing behavior, engagement levels, and loyalty indicators.
 
 ## 📊 Dataset Description
-[cite_start]The dataset contains **2,240 customer records** with **22 attributes**[cite: 4]. The features are divided into several categories:
-* [cite_start]**Demographics:** Year of birth, Education, Marital Status, Income, and household details[cite: 13, 14].
-* [cite_start]**Purchase Behavior (Amount Spent):** Spending over the last 2 years on categories like Wines, Fruits, Meat, Fish, Sweets, and Gold[cite: 15, 16].
-* [cite_start]**Purchase Behavior (Frequency):** Number of purchases made via discounts, website, catalog, and physical stores, as well as monthly web visits[cite: 17, 18].
-* [cite_start]**Customer Feedback:** Recency (days since last purchase) and recent complaints[cite: 19, 21].
+The dataset contains **2,240 customer records** with **22 attributes**. The features are divided into several categories:
+* **Demographics:** Year of birth, Education, Marital Status, Income, and household details.
+* **Purchase Behavior (Amount Spent):** Spending over the last 2 years on categories like Wines, Fruits, Meat, Fish, Sweets, and Gold.
+* **Purchase Behavior (Frequency):** Number of purchases made via discounts, website, catalog, and physical stores, as well as monthly web visits.
+* **Customer Feedback:** Recency (days since last purchase) and recent complaints.
 
 ## 🛠️ Tech Stack
 * **Language:** Python
@@ -22,21 +22,21 @@ This project implements an intelligent customer segmentation system using unsupe
 ### 1. Data Preprocessing & Cleaning
 * Handled missing values (e.g., in the `Income` column).
 * Engineered new features (e.g., calculating customer `Age` from `Year_Birth`, or `Total_Spent` from individual product categories).
-* [cite_start]Encoded categorical variables like `Education` and `Marital_Status`[cite: 14].
+* Encoded categorical variables like `Education` and `Marital_Status`.
 
 ### 2. Exploratory Data Analysis (EDA)
 * Analyzed the distribution of spending habits and income.
-* [cite_start]Visualized correlations between features (e.g., Income vs. Amount spent on Wines)[cite: 14, 16].
+* Visualized correlations between features (e.g., Income vs. Amount spent on Wines).
 * Handled outliers to ensure they didn't skew the clustering models.
 
 ### 3. Feature Scaling & Dimensionality Reduction
-* [cite_start]Standardized the dataset using `StandardScaler` so that high-value features (like `Income`) didn't dominate low-value features (like `NumWebVisitsMonth`)[cite: 14, 18].
+* Standardized the dataset using `StandardScaler` so that high-value features (like `Income`) didn't dominate low-value features (like `NumWebVisitsMonth`).
 * Applied Principal Component Analysis (PCA) to reduce the 22 dimensions and visualize the clusters in 2D/3D space.
 
 ### 4. Clustering Algorithm Implementation
-* [cite_start]Utilized Unsupervised Machine Learning Agglomorative algorithms to discover hidden patterns[cite: 7, 9].
+* Utilized Unsupervised Machine Learning Agglomorative algorithms to discover hidden patterns.
 * Used the **Elbow Method**  to determine the optimal number of clusters (K).
-* [cite_start]Trained the final clustering model and assigned labels to all 2,240 records[cite: 4].
+* Trained the final clustering model and assigned labels to all 2,240 records.
 
 ### 5. Cluster Profiling & Business Insights
 
@@ -49,7 +49,7 @@ This project implements an intelligent customer segmentation system using unsupe
 Based on the clusters identified, SmartCart can now:
 1. Target high-income clusters with premium catalog offers.
 2. Send discount-heavy email campaigns specifically to the "Deal Hunter" segment.
-3. [cite_start]Re-engage at-risk customers (high `Recency` score) with personalized retention campaigns[cite: 21].
+3. Re-engage at-risk customers (high `Recency` score) with personalized retention campaigns.
 
 ## 💻 How to Run This Project
 1. Clone the repository: `git clone https://github.com/yourusername/SmartCart-Clustering.git`
