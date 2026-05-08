@@ -1,9 +1,9 @@
 # 🛒 SmartCart Customer Clustering System
 
 ## 📌 Project Overview
-[cite_start]SmartCart is a growing e-commerce platform that previously used generic marketing strategies for all customers[cite: 3, 5]. [cite_start]This approach resulted in inefficient marketing, delayed identification of churn-prone users, and missed opportunities to retain high-value customers[cite: 6]. 
+SmartCart is a growing e-commerce platform that previously used generic marketing strategies for all customers.This approach resulted in inefficient marketing, delayed identification of churn-prone users, and missed opportunities to retain high-value customers. 
 
-[cite_start]This project implements an intelligent customer segmentation system using unsupervised machine learning[cite: 7]. [cite_start]By analyzing historical transaction data, the system groups customers into meaningful clusters based on their purchasing behavior, engagement levels, and loyalty indicators[cite: 8].
+This project implements an intelligent customer segmentation system using unsupervised machine learning. [cite_start]By analyzing historical transaction data, the system groups customers into meaningful clusters based on their purchasing behavior, engagement levels, and loyalty indicators.
 
 ## 📊 Dataset Description
 [cite_start]The dataset contains **2,240 customer records** with **22 attributes**[cite: 4]. The features are divided into several categories:
